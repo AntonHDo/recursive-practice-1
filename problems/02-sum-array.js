@@ -12,12 +12,12 @@ sumArray([1, 2, 3, 4, 5]); // 15
 
 function sumArray(arr) {
   debugger
-  if (arr = []) {
-    return []
+  if (arr.length === 0) {
+    return null
   }
-  const first = arr[0]
   debugger
-  result = sumArray(arr.slice(0))
+  let first = arr[0]
+  result = sumArray(arr.slice(1))
   debugger
   return result + first
 }
